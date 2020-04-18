@@ -17,10 +17,14 @@ model = lm.fit(X, y)
 #R squared
 print(lm.score(X,y))
 
+#For 1 unit of change on X axis, y changes a percentage between 0% - 100%
 print(lm.coef_)
 
+#Y-Intercept
 print(lm.intercept_)
 
+#predict Y (dependent) values base off of X (independent) values
 predictions = lm.predict(X)
 
+#Print out first 10 predictions (0-9)
 print(predictions[:10])
